@@ -1,26 +1,25 @@
 import React from "react";
-import { FaBeer, FaGithub, FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import S from "./Style.js";
+import S from "../styled/Nav.styled";
 
 const Navigation = (props: {}) => {
   return (
-    <S.Navigation>
-      <S.UL>
-        <S.LI>
+    <S.Nav>
+      <S.NavLinkContainer>
+        <S.NavLinkItem>
         <Link to='/'><span>$</span>home</Link>
-        </S.LI>
-        <S.LI>
+        </S.NavLinkItem>
+        <S.NavLinkItem>
         <Link to="/projects"><span>$</span>projects</Link>
-        </S.LI>
-        <S.LI>
+        </S.NavLinkItem>
+        <S.NavLinkItem>
         <Link to="/about"><span>$</span>about</Link>
-        </S.LI>
-        <S.LI>
+        </S.NavLinkItem>
+        <S.NavLinkItem>
         <Link to="/contact"><span>$</span>contact</Link>
-        </S.LI>
-      </S.UL>
-    </S.Navigation>
+        </S.NavLinkItem>
+      </S.NavLinkContainer>
+    </S.Nav>
   );
 };
 
