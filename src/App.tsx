@@ -16,6 +16,6 @@ function App() {
 export default App;
 
 const AppContainer = styled.div`
-  width: 100vw;
   background-color: #1e1e1e;
+  min-height: 100vh;
 `;
