@@ -1,14 +1,13 @@
-const shortBio: string = "Computer Nerd | Climber | Ski Bum | Aspiring Van-Lifer";
+const shortBio: string = "Computer Nerd | Climber | Ski Bum";
 const bio: string = "Interested in ML/AI, Linux/Unix based OS, UX/UI; improving the end user experience.";
-const email: string = "";
-const github: string = "";
-const linkedin: string = "";
-const name: string = "";
+const email: string = "mailto:miaxyhunt@gmail.com";
+const github: string = "https://www.github.com/kaykay38/";
+const linkedin: string = "https://www.linkedin.com/in/m-a89398128/";
+const name: string = "Mia Hunt";
 const phone: string = "";
-const resume: string = "";
 const twitter: string = "";
 
-export interface Constants  {
+export interface ConstantsInterface  {
     shortBio: string;
     bio: string;
     email: string;
@@ -16,11 +15,10 @@ export interface Constants  {
     linkedin: string;
     name: string;
     phone: string;
-    resume: string;
     twitter: string;
 }
 
-const ConstantVars: Constants = {
+const Constants: ConstantsInterface = {
     shortBio,
     bio,
     email,
@@ -28,8 +26,7 @@ const ConstantVars: Constants = {
     linkedin,
     name,
     phone,
-    resume,
     twitter,
 }
 
-export default ConstantVars;
+export default Constants;
