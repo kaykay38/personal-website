@@ -5,6 +5,10 @@ export const siteData = {
     subtitle: 'Nerd · Climber · Skier',
     bio: 'I follow curiosity, learn, experiment, create, write, and think – just being a normal human.',
   },
+  writing: {
+    subtitle: 'Notes, reflections, and ruminations.',
+    subSubtitle: '* Most posts have a typed and cursive version',
+  },
   nav: {
     writingImage: '/headings/writing.svg',
     socialLinks: [

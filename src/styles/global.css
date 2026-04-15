@@ -3,6 +3,7 @@
   --paper-shadow: #eadfc8;
   --ink: #2b241c;
   --muted: #6f6558;
+  --extra-muted: #857869;
   --accent: #5a4632;
   --border: #d8ccb5;
 
@@ -234,10 +235,19 @@ a:hover {
 }
 
 .home-bio,
-.section-intro,
+.page-subtitle,
 .post-description,
 .post-list-description {
   color: var(--muted);
+}
+
+.page-subtitle {
+  font-size: 1.3rem;
+}
+.page-sub-subtitle {
+  margin-top: -1rem; 
+  font-size: .9rem;
+  color: var(--extra-muted);
 }
 
 h1,

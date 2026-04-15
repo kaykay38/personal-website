@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 import { formatDate } from '../utils/formatDate';
+import { siteData } from '../data/site';
 
 const posts = (await getCollection('blog'))
   .filter((post) => !post.data.draft)
@@ -11,8 +12,11 @@ const posts = (await getCollection('blog'))
 <BaseLayout title="Writing">
   <section>
     <h1 class="page-title">Writing</h1>
-    <p class="section-intro">
-      Notes, reflections, and ruminations.
+    <p class="page-subtitle">
+      {siteData.writing.subtitle}
+    </p>
+    <p class="page-sub-subtitle">
+      {siteData.writing.subSubtitle}
     </p>
 
     <ul class="post-list">
