@@ -1,36 +1,59 @@
-# Astro Starter Kit: Basics
+# My Personal Website
+
+URL: [https://miahunt.com/](https://miahunt.com/)
+
+This is my first time using Astro. There will be a lot of superfluous inelegant code that I will work on improving throughout the process of building this site.
+
 
 ```sh
 npm create astro@latest -- --template basics
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
+## Project Structure
 
 ```text
 /
-├── public/
-│   └── favicon.svg
+├── astro.config.mjs
+├── package-lock.json
+├── package.json
+├── public
+│   ├── admin
+│   │   ├── config.yml
+│   │   └── index.html
+│   ├── cursive
+│   │   └── cursive-images.webp
+│   ├── favicon.ico
+│   ├── favicon.svg
+│   └── icons
+├── README.md
 ├── src
 │   ├── assets
-│   │   └── astro.svg
 │   ├── components
-│   │   └── Welcome.astro
+│   │   ├── Nav.tsx
+│   │   └── PostViewToggle.tsx
+│   ├── content
+│   │   └── blog
+│   │       └── posts.mdx
+│   ├── content.config.ts
+│   ├── data
+│   │   └── site.ts
 │   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
+│   │   ├── BaseLayout.astro
+│   │   └── PostLayout.astro
+│   ├── pages
+│   │   ├── index.astro
+│   │   ├── writing
+│   │   │   └── [...slug].astro
+│   │   └── writing.astro
+│   ├── styles
+│   │   └── global.css
+│   └── utils
+│       └── formatDate.ts
+└── tsconfig.json
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
+## Commands
 
 | Command                   | Action                                           |
 | :------------------------ | :----------------------------------------------- |
@@ -41,6 +64,7 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## Learn more
+
+[Astro documentation](https://docs.astro.build) or [Discord server](https://astro.build/chat).
