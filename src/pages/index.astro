@@ -1,0 +1,18 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { siteData } from '../data/site';
+---
+
+<BaseLayout title="Mia Hunt" contentClass="home-page-content">
+  <section class="home-hero">
+    <img
+      src={siteData.home.titleImage}
+      alt="Mia Hunt"
+      class="home-heading"
+    />
+
+    <p class="home-subtitle">{siteData.home.subtitle}</p>
+
+    <p class="home-bio">{siteData.home.bio}</p>
+  </section>
+</BaseLayout>
